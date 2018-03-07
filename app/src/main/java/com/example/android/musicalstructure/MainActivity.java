@@ -1,16 +1,11 @@
 package com.example.android.musicalstructure;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -28,9 +23,19 @@ public class MainActivity extends AppCompatActivity {
         songs.add(new Song("Swedish House Mafia", "The One"));
         songs.add(new Song("Major Lazer", "Get Free"));
         songs.add(new Song("Maroon 5", "What Lovers Do"));
+        songs.add(new Song("Michael Jackson", "Thriller"));
+        songs.add(new Song("Swedish House Mafia", "The One"));
+        songs.add(new Song("Major Lazer", "Get Free"));
+        songs.add(new Song("Maroon 5", "What Lovers Do"));
+        songs.add(new Song("Michael Jackson", "Thriller"));
+        songs.add(new Song("Swedish House Mafia", "The One"));
+        songs.add(new Song("Major Lazer", "Get Free"));
+        songs.add(new Song("Maroon 5", "What Lovers Do"));
+        songs.add(new Song("Michael Jackson", "Thriller"));
+        songs.add(new Song("Swedish House Mafia", "The One"));
+        songs.add(new Song("Major Lazer", "Get Free"));
+        songs.add(new Song("Maroon 5", "What Lovers Do"));
 
-
-//        String[] artists = {"Prodigy", "Led Zeppelin", "Michael Jackson", "SHM", "Prince"};
         SongAdapter adapter = new SongAdapter(this, songs);
         final ListView songsListView = findViewById(R.id.songsListView);
         songsListView.setAdapter(adapter);
@@ -52,4 +57,3 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 }
-

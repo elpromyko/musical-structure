@@ -1,8 +1,5 @@
 package com.example.android.musicalstructure;
 
-/**
- * Created by promyk on 02.03.18.
- */
 
 public class Song {
     private String artist;
