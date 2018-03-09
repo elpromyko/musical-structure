@@ -18,19 +18,19 @@ public class CurrentlyPLayingActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Currently playing");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        TextView currentArtistView = findViewById(R.id.currentArtist);
+        TextView currentArtistView = findViewById(R.id.current_artist);
         currentArtistView.setText(getIntent().getStringExtra("current_artist"));
 
-        TextView currentTitleView = findViewById(R.id.currentTitle);
+        TextView currentTitleView = findViewById(R.id.current_title);
         currentTitleView.setText(getIntent().getStringExtra("current_title"));
 
-        final Button playButton = findViewById(R.id.playButton);
-        Button stopButton = findViewById(R.id.stopButton);
+        final Button playButton = findViewById(R.id.play_button);
+        Button stopButton = findViewById(R.id.stop_button);
 
         playButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if (playButton.getBackground().getConstantState() == getResources().getDrawable(R.drawable.ic_play_arrow_black_24dp).getConstantState()) {
-                    playButton.setBackgroundResource(R.drawable.ic_pause_black_24dp);
+                if (playButton.getBackground().getConstantState() == getResources().getDrawable(R.drawable.ic_play_arrow).getConstantState()) {
+                    playButton.setBackgroundResource(R.drawable.ic_pause);
 
                 }
             }
@@ -38,8 +38,8 @@ public class CurrentlyPLayingActivity extends AppCompatActivity {
 
         stopButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                if ( playButton.getBackground().getConstantState() != getResources().getDrawable(R.drawable.ic_play_arrow_black_24dp).getConstantState()) {
-                    playButton.setBackgroundResource(R.drawable.ic_play_arrow_black_24dp);
+                if ( playButton.getBackground().getConstantState() != getResources().getDrawable(R.drawable.ic_play_arrow).getConstantState()) {
+                    playButton.setBackgroundResource(R.drawable.ic_play_arrow);
 
                 }
             }

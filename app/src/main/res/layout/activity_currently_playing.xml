@@ -14,14 +14,14 @@
         android:src="@drawable/player_default_cover" />
 
     <TextView
-        android:id="@+id/currentArtist"
+        android:id="@+id/current_artist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/currentTitle"
+        android:id="@+id/current_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="" />
@@ -37,18 +37,18 @@
         android:gravity="center_horizontal">
 
         <Button
-            android:id="@+id/playButton"
+            android:id="@+id/play_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_margin="@dimen/small_margin"
-            android:background="@drawable/ic_play_arrow_black_24dp" />
+            android:background="@drawable/ic_play_arrow" />
 
         <Button
-            android:id="@+id/stopButton"
+            android:id="@+id/stop_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_margin="@dimen/small_margin"
-            android:background="@drawable/ic_stop_black_24dp" />
+            android:background="@drawable/ic_stop" />
 
 
     </LinearLayout>
