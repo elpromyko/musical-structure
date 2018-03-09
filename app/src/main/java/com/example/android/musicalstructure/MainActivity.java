@@ -17,28 +17,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<Song> songs = new ArrayList<Song>();
+        ArrayList<Song> songsList = new ArrayList<Song>();
 
-        songs.add(new Song("Michael Jackson", "Thriller"));
-        songs.add(new Song("Swedish House Mafia", "The One"));
-        songs.add(new Song("Major Lazer", "Get Free"));
-        songs.add(new Song("Maroon 5", "What Lovers Do"));
-        songs.add(new Song("Michael Jackson", "Thriller"));
-        songs.add(new Song("Swedish House Mafia", "The One"));
-        songs.add(new Song("Major Lazer", "Get Free"));
-        songs.add(new Song("Maroon 5", "What Lovers Do"));
-        songs.add(new Song("Michael Jackson", "Thriller"));
-        songs.add(new Song("Swedish House Mafia", "The One"));
-        songs.add(new Song("Major Lazer", "Get Free"));
-        songs.add(new Song("Maroon 5", "What Lovers Do"));
-        songs.add(new Song("Michael Jackson", "Thriller"));
-        songs.add(new Song("Swedish House Mafia", "The One"));
-        songs.add(new Song("Major Lazer", "Get Free"));
-        songs.add(new Song("Maroon 5", "What Lovers Do"));
+        songsList.add(new Song("Michael Jackson", "Thriller"));
+        songsList.add(new Song("Swedish House Mafia", "The One"));
+        songsList.add(new Song("Major Lazer", "Get Free"));
+        songsList.add(new Song("Maroon 5", "What Lovers Do"));
+        songsList.add(new Song("Michael Jackson", "Thriller"));
+        songsList.add(new Song("Swedish House Mafia", "The One"));
+        songsList.add(new Song("Major Lazer", "Get Free"));
+        songsList.add(new Song("Maroon 5", "What Lovers Do"));
+        songsList.add(new Song("Michael Jackson", "Thriller"));
+        songsList.add(new Song("Swedish House Mafia", "The One"));
+        songsList.add(new Song("Major Lazer", "Get Free"));
+        songsList.add(new Song("Maroon 5", "What Lovers Do"));
+        songsList.add(new Song("Michael Jackson", "Thriller"));
+        songsList.add(new Song("Swedish House Mafia", "The One"));
+        songsList.add(new Song("Major Lazer", "Get Free"));
+        songsList.add(new Song("Maroon 5", "What Lovers Do"));
 
-        SongAdapter adapter = new SongAdapter(this, songs);
+        SongAdapter songsAdapter = new SongAdapter(this, songsList);
         final ListView songsListView = findViewById(R.id.songsListView);
-        songsListView.setAdapter(adapter);
+        songsListView.setAdapter(songsAdapter);
 
 
         songsListView.setOnItemClickListener(

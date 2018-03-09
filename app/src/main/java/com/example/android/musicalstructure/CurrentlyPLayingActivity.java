@@ -18,10 +18,10 @@ public class CurrentlyPLayingActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Currently playing");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        TextView currentArtistView = (TextView) findViewById(R.id.currentArtist);
+        TextView currentArtistView = findViewById(R.id.currentArtist);
         currentArtistView.setText(getIntent().getStringExtra("current_artist"));
 
-        TextView currentTitleView = (TextView) findViewById(R.id.currentTitle);
+        TextView currentTitleView = findViewById(R.id.currentTitle);
         currentTitleView.setText(getIntent().getStringExtra("current_title"));
 
         final Button playButton = findViewById(R.id.playButton);

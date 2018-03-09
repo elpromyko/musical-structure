@@ -26,9 +26,9 @@ public class SongAdapter extends ArrayAdapter<Song> {
         }
         Song currentSong = getItem(position);
 
-        TextView artistTextView = (TextView) songView.findViewById(R.id.artistName);
-        TextView titleTextView = (TextView) songView.findViewById(R.id.songTitle);
-        ImageView playImageView = (ImageView) songView.findViewById(R.id.playImage);
+        TextView artistTextView = (TextView) songView.findViewById(R.id.artist_name);
+        TextView titleTextView = (TextView) songView.findViewById(R.id.song_title);
+        ImageView playImageView = (ImageView) songView.findViewById(R.id.play_image);
 
         artistTextView.setText(currentSong.getArtist());
         titleTextView.setText(currentSong.getTitle());

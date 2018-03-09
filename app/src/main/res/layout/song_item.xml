@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:id="@+id/artistName"
+        android:id="@+id/artist_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/medium_margin"
@@ -16,7 +16,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/songTitle"
+        android:id="@+id/song_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/medium_margin"
@@ -24,7 +24,7 @@
         android:text="" />
 
     <ImageView
-        android:id="@+id/playImage"
+        android:id="@+id/play_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/medium_margin"
